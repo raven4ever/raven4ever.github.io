@@ -1,4 +1,5 @@
-title: The Curious Engineer
+title: "The Curious Engineer"
+subtitle: "Version 2.0"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   A blog about various problems and their solutions.
@@ -8,14 +9,16 @@ search: true
 
 domain: raven4ever.github.io
 url: https://raven4ever.github.io
+repository: "raven4ever/raven4ever.github.io"
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+logo: "/assets/images/curious-logo.png"
 
 # Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+permalink: /blog/:title/
+paginate: 7 # amount of posts to show
 paginate_path: /page:num/
 timezone: Europe/Bucharest
 
@@ -47,6 +50,7 @@ author:
   name: "Adrian"
   avatar: "/assets/images/bio-photo.png"
   bio: "A simple engineer curious to explore the technical world."
+  location: "Bucharest, Romania"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -72,6 +76,7 @@ defaults:
       share: true
       related: true
       author_profile: false
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
@@ -80,9 +85,6 @@ defaults:
       layout: single
       author_profile: true
 
-category_archive:
-  type: liquid
-  path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
